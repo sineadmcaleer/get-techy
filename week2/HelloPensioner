@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+   int age = 9;
+   int retirementAge = 66;
+   
+   if (age > retirementAge)
+   {
+       printf("Hello Pensioner!\n");
+   }
+    else
+    {
+        printf("Hello Youth!\n");
+    }
+}
