@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int count = 0;
+   
+   while(count < 16)
+   {
+      int squareNumber = count * count;
+      printf("%d\n", squareNumber);
+      count++;
+       
+   }
+
+}
