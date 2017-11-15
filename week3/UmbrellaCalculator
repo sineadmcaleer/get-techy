@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int isRaining = 0;
+    int looksLikeRain = 1; 
+    
+    if(isRaining == 1 || looksLikeRain == 1)
+    {
+        printf("Bring an umbrella!\n");
+    }
+    else
+    {
+        printf("There is no need to bring an umbrella...probably.\n");
+    }
+}
