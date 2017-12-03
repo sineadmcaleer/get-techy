@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int true = 1;
+  while(true)
+  {
+    srand(time(NULL));
+    int card = rand() % 13 + 1; 
+    printf("Card is: %d. ", card);
+    
+    int input;
+    printf("Is next card 1)higher, 2)lower or 3) the same? Enter 4 to quit");
+    scanf("%d", &input);
+    
+    if(input == 4)
+    {
+      true = 0;
+    }
+    else
+    {
+      srand(time(NULL));
+      int nextCard = rand() % 13 + 1; 
+      printf("Next card is: %d\n", nextCard);
+
+      if(input == 1 && nextCard > card)
+      {
+        printf("success\n");
+      }
+      else if (input == 2 && nextCard < card)
+      {
+        printf("success\n");
+      }
+      else if (input == 3 && nextCard == card)
+      {
+        printf("success\n");
+      }
+      else
+        printf("failure\n");
+    }
+  }
+  printf("End of game.\n");
+}
